@@ -1,4 +1,4 @@
-import { busMallData } from '../data/product-data.js';
+// import { busMallData } from '../data/product-data.js';
 
 export function generateRandomProduct(dataArray) {
     const randomProductNum = Math.floor(Math.random() * dataArray.length);
