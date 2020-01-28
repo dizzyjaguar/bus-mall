@@ -1,4 +1,4 @@
-const productsArray = [
+const productsData = [
     {
         id:'1',
         name:'star wars bag',
@@ -122,4 +122,4 @@ const productsArray = [
 ];
 
 
-export default productsArray;
+export default productsData;

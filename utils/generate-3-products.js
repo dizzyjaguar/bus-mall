@@ -1,4 +1,4 @@
-import { generateRandomProduct } from './generate-random-object.js';
+import generateRandomProduct from './generate-random-product.js';
 
 const generate3Products = (productsArray) => {
     let product1 = generateRandomProduct(productsArray);
