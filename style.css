@@ -1,0 +1,17 @@
+.content-flex-container {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid black;
+}
+
+.item-display-container {
+    width: 75%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid black;
+}
