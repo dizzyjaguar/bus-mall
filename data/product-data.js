@@ -1,4 +1,4 @@
-export const busMallData = [
+const productsArray = [
     {
         id:'1',
         name:'star wars bag',
@@ -122,10 +122,4 @@ export const busMallData = [
 ];
 
 
-
-// {
-//     id:""
-//     name=""
-//     image=""
-//     description=""
-// },
+export default productsArray;

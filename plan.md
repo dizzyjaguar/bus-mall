@@ -12,3 +12,10 @@
 
 -after 25 selctions disable voting and display vote results of what items got how many votes
 
+-----------------------------------
+-keep track of votes for a given product
+
+-keep track of how many times a user has voted, period (up to 25)
+-display three NON-duplicated random products
+-display three new NON-duplicated products
+-select one of the three products

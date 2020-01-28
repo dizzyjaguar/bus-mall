@@ -10,3 +10,4 @@ const imgItem3 = document.getElementById('item-3-img');
 const productRadioTags = document.querySelectorAll('input');
 
 const submitButton = document.getElementById('submitButton');
+
