@@ -1,9 +1,11 @@
 // imports 
 import productsData from './data/product-data.js';
-import generateRandomProduct from './utils/generate-random-product.js';
 import generate3Products from './utils/generate-3-products.js';
 
 const productsDataCopy = productsData.slice();
+
+let votedArray = [];
+
 
 console.log(productsDataCopy);
 
@@ -22,7 +24,7 @@ const radio3 = document.getElementById('radio-3');
 
 const submitButton = document.getElementById('submitButton');
 
-const threeProducts = generate3Products(productsDataCopy);
+let threeProducts = generate3Products(productsDataCopy);
 
 
 const displayItems = () => {
@@ -33,24 +35,28 @@ const displayItems = () => {
     
     imgItem1.src = threeProducts[0].image;
     imgItem2.src = threeProducts[1].image;
-    imgItem3.src = threeProducts[2].image;    
+    imgItem3.src = threeProducts[2].image;
+       
 };
 
+displayItems();
+
+// this is displaying the items on load, but also preventing the items from loading agin on click
 
 
 submitButton.addEventListener('click', () => {
+    threeProducts = generate3Products(productsDataCopy);
     
-    displayItems();
-
     radio1.value = threeProducts[0].id;
     radio2.value = threeProducts[1].id;
     radio3.value = threeProducts[2].id;
     
     const vote = document.querySelector('input:checked');
+    
     console.log(vote.value);
+    displayItems();
 });
 
 
 
 // call the function to test that it will display
-displayItems();
