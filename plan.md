@@ -1,8 +1,8 @@
-- hard code all of the data for the Bus Mall items 
+//- hard code all of the data for the Bus Mall items 
 
-- create all of the necessary html elements that will be used to either hold the displayed items and the button and any other DOM stuff
+//- create all of the necessary html elements that will be used to either hold the displayed items and the button and any other DOM stuff
 
-- make a function that displays 3 random items, being sure that you dont get 2 of the same items 
+//- make a function that displays 3 random items, being sure that you dont get 2 of the same items 
 
 -ability to choose 1 of the 3 displayed items and make a vote that will add to a count state of each item that gets a vote and each time that item gets a vote
 
