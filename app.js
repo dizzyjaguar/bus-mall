@@ -22,5 +22,18 @@ const submitButton = document.getElementById('submitButton');
 
 
 const displayItems = () => {
+    const threeProducts = generate3Products(productsDataCopy);
+
+    h2Item1.textContent = threeProducts[0].name;
+    h2Item2.textContent = threeProducts[1].name;
+    h2Item3.textContent = threeProducts[2].name;
+    
+    imgItem1.src = threeProducts[0].image;
+    imgItem2.src = threeProducts[1].image;
+    imgItem3.src = threeProducts[2].image;
 
 };
+
+
+// call the function to test that it will display
+displayItems();

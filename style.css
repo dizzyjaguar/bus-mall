@@ -1,6 +1,13 @@
+img {
+    max-width: 300px;
+    height: auto;
+}
+
+
+
 .content-flex-container {
     width: 80%;
-    height: 700px;
+    height: auto;
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
@@ -8,7 +15,7 @@
 }
 
 .item-display-container {
-    width: 75%;
+    width: 80%;
     height: auto;
     margin-top: 5%;
     margin-left: 10%;
