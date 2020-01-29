@@ -1,6 +1,26 @@
+canvas {
+    width: 75%;
+    height: 500px;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+}
+
+a {
+    height: 50%;
+}
+
+button {
+    height: 50%;
+    border-radius: 2rem;
+}
+
+
 .content-flex-container {
     width: 80%;
-    height: 700px;
+    height: auto;
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
@@ -8,7 +28,7 @@
 }
 
 .item-display-container {
-    width: 75%;
+    width: 80%;
     height: auto;
     margin-top: 5%;
     margin-left: 10%;
