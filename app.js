@@ -1,6 +1,7 @@
 // imports 
 import productsData from './data/product-data.js';
 import generate3Products from './utils/generate-3-products.js';
+import findById from './utils/find-by-id.js';
 
 const productsDataCopy = productsData.slice();
 
@@ -26,7 +27,6 @@ const submitButton = document.getElementById('submitButton');
 
 let threeProducts = generate3Products(productsDataCopy);
 
-
 const displayItems = () => {
 
     h2Item1.textContent = threeProducts[0].name;
@@ -41,8 +41,6 @@ const displayItems = () => {
 
 displayItems();
 
-// this is displaying the items on load, but also preventing the items from loading agin on click
-
 
 submitButton.addEventListener('click', () => {
     threeProducts = generate3Products(productsDataCopy);
@@ -51,12 +49,26 @@ submitButton.addEventListener('click', () => {
     radio2.value = threeProducts[1].id;
     radio3.value = threeProducts[2].id;
     
-    const vote = document.querySelector('input:checked');
+    const votedItem = document.querySelector('input:checked').value;
+    const isInVotedArray = findById(votedArray, votedItem);
     
-    console.log(vote.value);
+    // if voted item is in votedArray then ++ the vote attribute
+    // else add the .id to the array as a new object in the array and give it 
+    // a vote attribute of 1
+    if (isInVotedArray) {
+        isInVotedArray.votes++;
+    } else {
+        votedArray.push({
+            id: votedItem,
+            votes: 1
+        });
+    }
+    
+    console.log(votedArray);
+    
     displayItems();
 });
 
 
 
-// call the function to test that it will display
+
