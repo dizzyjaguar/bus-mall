@@ -6,6 +6,7 @@ import findById from './utils/find-by-id.js';
 const productsDataCopy = productsData.slice();
 
 let votedArray = [];
+let votesMade = 25;
 
 
 console.log(productsDataCopy);
@@ -65,6 +66,15 @@ submitButton.addEventListener('click', () => {
     }
     
     console.log(votedArray);
+
+    //dealing with a limited number of votes that can be done
+    votesMade--;
+    
+    if (votesMade === 0){
+        submitButton.disabled = true;
+    }
+
+    console.log(votesMade);
     
     displayItems();
 });
