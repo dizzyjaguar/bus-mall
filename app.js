@@ -25,6 +25,7 @@ const radio3 = document.getElementById('radio-3');
 
 
 const submitButton = document.getElementById('submitButton');
+const resultsButton = document.getElementById('resultsButton');
 
 let threeProducts = generate3Products(productsDataCopy);
 
@@ -71,6 +72,7 @@ submitButton.addEventListener('click', () => {
     votesMade--;
     
     if (votesMade === 0){
+
         submitButton.disabled = true;
     }
 

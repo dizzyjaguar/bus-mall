@@ -8,6 +8,14 @@ img {
     height: auto;
 }
 
+a {
+    height: 50%;
+}
+
+button {
+    height: 50%;
+    border-radius: 2rem;
+}
 
 
 .content-flex-container {
